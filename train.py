@@ -1,4 +1,4 @@
-from data_loaders import load_data
+from data_loaders import load_data, parse_image
 from model import define_model, VGG16_model
 from show_results import plot_results
 
@@ -17,13 +17,13 @@ else:
     # Traing model
     history = model.fit(x_train, y_train,
                         batch_size=64*2,
-                        epochs=10,
+                        epochs=2,
                         validation_data=(x_val, y_val),
                         workers=8,
                         use_multiprocessing=True,
                         verbose=1)
     # Plot results
-    plot_results(history, 'model')
+    # plot_results(history, 'model')
     # Save the model
     model.save('models/project_model.h5')
 
@@ -34,6 +34,8 @@ print("Test loss, Test acc: ", results)
 
 # Make predictions
 print('PREDICT IMAGE MEMORABILITY')
-input = input("Enter image's file name: ")
-while(input != 'exit'):
-    print('Memorability score for ' + input + ': ' + str(model.predict(input)))
+img_name = input("Enter image's file name: ")
+while(img_name != ''):
+    img = parse_image(img_name)
+    print('Memorability score for ' + img_name + ': ' + str(model.predict(img)))
+    img_name = input("Enter image's file name: ")
