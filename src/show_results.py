@@ -26,4 +26,4 @@ def plot_results(history, filename):
     plt.tight_layout()
 
     # Save the plot
-    plt.savefig(filename + '_results.png')
+    plt.savefig('../plots/' + filename + '_results.png')
