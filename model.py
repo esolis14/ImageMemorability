@@ -58,7 +58,7 @@ def VGG16_model(x_train, x_val, y_train, y_val):
     # Train the model with the frozen base
     history_frozen = model.fit(x_train, y_train,
                     batch_size=64*2,
-                    epochs=20,
+                    epochs=30,
                     validation_data=(x_val, y_val),
                     workers=8,
                     use_multiprocessing=True,
