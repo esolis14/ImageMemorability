@@ -13,7 +13,7 @@ For the purpose of this project the LaMem data set has been selected. This data 
 4. Run the `train.py` file for training and evaluating the models.
 If the `pre_trained` variable is set to `True`, the Transfer Learning model is executed, Otherwise, the CNN model is built.
 
-5.  Run the `predict.py` file for predict the memorability score of new images.
+5.  Run the `predict.py` file for predicting the memorability score of new images.
 
 ### References
 Aditya Khosla, Akhil S. Raju, Antonio Torralba, and Aude Oliva. Understanding and predicting image memorability at
