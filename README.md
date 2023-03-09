@@ -1,5 +1,5 @@
 # ImageMemorability
-This repository contains the final project for the CS 577 Deep Learning course at the IIT, which consits of a neural network model for predicting image memorability.
+This repository consits of a neural network model for predicting image memorability.
 
 For the purpose of this project the LaMem data set has been selected. This data set consists of 60,000 images, each one associated with a normalized memorability score. This data can be download from the LaMem site: http://memorability.csail.mit.edu/download.html
 
@@ -20,3 +20,4 @@ Aditya Khosla, Akhil S. Raju, Antonio Torralba, and Aude Oliva. Understanding an
 a large scale. In 2015 IEEE International Conference on Computer Vision (ICCV), pages 2390–2398, 2015.
 
 
+# Image-Memorability
